@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
-//Name: ESCENA_CAFETERIA.ma
-//Last modified: Mon, Jan 20, 2025 02:27:17 PM
+//Name: ESCENA_CAFETERIA02.ma
+//Last modified: Mon, Jan 20, 2025 02:28:00 PM
 //Codeset: 1252
 requires maya "2025";
 requires "stereoCamera" "10.0";
@@ -14,19 +14,19 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202404240506-c155a58772";
 fileInfo "osv" "Windows 11 Education v2009 (Build: 22631)";
-fileInfo "UUID" "8AAF6B2E-485F-5983-AD1F-F6BC0B6F637E";
+fileInfo "UUID" "003DD9C3-448C-6A35-0C1A-9B8CE22C5709";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "3FC5CE0C-4974-92DC-8530-24BB2F0074CF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -358.73535945912681 427.13661149456317 552.61659001326177 ;
-	setAttr ".r" -type "double3" -39.599999999947507 1049.2000000000091 1.8513988213118827e-15 ;
+	setAttr ".t" -type "double3" -1743.3054322724649 1113.4847072760949 1403.8296857283308 ;
+	setAttr ".r" -type "double3" -23.399999999947905 1039.2000000000046 2.1007763906231232e-15 ;
 	setAttr ".rpt" -type "double3" -1.1168119479500865e-15 -1.4236680142341408e-15 -7.1246912014502545e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "66AEE880-4AC1-4A4A-374C-E0B0D970D50F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 560.34395943518371;
+	setAttr ".coi" 2363.3400391173195;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -133808,7 +133808,7 @@ createNode groupId -n "groupId23";
 	rename -uid "08A90693-40B3-64EE-0217-FABF340F9462";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "619D2EC4-413A-C20C-6BDF-7B85E6A3B2CB";
+	rename -uid "B94F3F67-4909-4460-686D-0BA29850658B";
 select -ne :time1;
 	setAttr ".o" 41;
 	setAttr ".unw" 41;
@@ -134278,4 +134278,4 @@ connectAttr "pCubeShape27.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape28.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCube23Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId23.msg" ":initialShadingGroup.gn" -na;
-// End of ESCENA_CAFETERIA.ma
+// End of ESCENA_CAFETERIA02.ma
