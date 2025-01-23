@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: ESCENA_CAFETERIA02.ma
-//Last modified: Thu, Jan 23, 2025 01:13:07 PM
+//Last modified: Thu, Jan 23, 2025 01:17:40 PM
 //Codeset: 1252
 requires maya "2025";
 requires "stereoCamera" "10.0";
@@ -14,19 +14,19 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202404240506-c155a58772";
 fileInfo "osv" "Windows 11 Education v2009 (Build: 22631)";
-fileInfo "UUID" "0E7D5232-4374-7952-5EE7-9E91477285DB";
+fileInfo "UUID" "013AD29C-422B-487F-6550-8CB4C1B76804";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "3FC5CE0C-4974-92DC-8530-24BB2F0074CF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 281.52081062926476 199.35358228797043 -142.77915922999171 ;
+	setAttr ".t" -type "double3" 193.94360049766073 235.96882244872012 -84.59299993897676 ;
 	setAttr ".r" -type "double3" -19.2000000000657 3903.5999999976511 0 ;
 	setAttr ".rpt" -type "double3" -1.1168119479500865e-15 -1.4236680142341408e-15 -7.1246912014502545e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "66AEE880-4AC1-4A4A-374C-E0B0D970D50F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 47.987948615651163;
+	setAttr ".coi" 159.32560028616143;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -169236,7 +169236,7 @@ createNode polyTweak -n "polyTweak57";
 	setAttr ".tk[364]" -type "float3" 0.670578 -0.54263306 -0.80445862 ;
 	setAttr ".tk[365]" -type "float3" 0.80895233 -0.20328331 -0.021090388 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "267EDE9C-4C67-F1CE-975C-EE81C1FC7D5B";
+	rename -uid "A095F108-4199-5294-F6E7-BDA0A710BA6D";
 select -ne :time1;
 	setAttr ".o" 41;
 	setAttr ".unw" 41;
