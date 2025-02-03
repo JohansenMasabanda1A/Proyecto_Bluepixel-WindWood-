@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
-//Name: Key_01.ma
-//Last modified: Mon, Feb 03, 2025 02:17:33 PM
+//Name: Key_02.ma
+//Last modified: Mon, Feb 03, 2025 02:18:50 PM
 //Codeset: 1252
 requires maya "2025";
 requires "stereoCamera" "10.0";
@@ -14,18 +14,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202404240506-c155a58772";
 fileInfo "osv" "Windows 11 Education v2009 (Build: 22631)";
-fileInfo "UUID" "7445AD87-4648-BD34-520F-5D9F752998C8";
+fileInfo "UUID" "8FB1AB6E-43B7-0B3D-5FDA-96BF481CB8E2";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "3D88268A-4CA3-2F97-E1FF-5CA2F31012DF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 71.678641836340333 138.45674020382057 -10.403614376612364 ;
+	setAttr ".t" -type "double3" 103.24868681286971 168.99993734476897 15.161303977091031 ;
 	setAttr ".r" -type "double3" -36.938352738380559 3650.9999999951096 -5.0539514154665203e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7D8A9ED5-4C52-BC40-5597-84B8FCF5CB71";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 2.9076432519556317;
+	setAttr ".coi" 53.732043709240394;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -13800,7 +13800,7 @@ createNode polyMapCut -n "polyMapCut28";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 17 "e[8]" "e[22]" "e[36]" "e[113]" "e[120]" "e[197]" "e[211]" "e[225]" "e[309:310]" "e[313:314]" "e[330]" "e[332:334]" "e[353]" "e[355]" "e[359]" "e[361:362]" "e[365:366]";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "C05F0A55-4364-9F18-A5D4-358F41B16A70";
+	rename -uid "14A2986C-4CCC-6CD0-48D7-CC8334FAA3CC";
 select -ne :time1;
 	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
@@ -14155,4 +14155,4 @@ connectAttr "groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId4.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId5.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId6.msg" ":initialShadingGroup.gn" -na;
-// End of Key_01.ma
+// End of Key_02.ma
