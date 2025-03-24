@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
-//Name: Escena_Pasillo.ma
-//Last modified: Mon, Mar 24, 2025 02:23:21 PM
+//Name: Escena_Pasillo_02.ma
+//Last modified: Mon, Mar 24, 2025 02:23:44 PM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "mayaUsdLayerManager" -dataType "pxrUsdStageData" "mayaUsdPlugin" "0.28.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202404240506-c155a58772";
 fileInfo "osv" "Windows 11 Education v2009 (Build: 22631)";
-fileInfo "UUID" "AD95BE47-4E53-591B-5489-97AAA7AFA1A2";
+fileInfo "UUID" "486C19C4-4183-EC6A-C87C-CB966B139C65";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "4A01EC46-4B9B-C140-2DDB-0A8E9033122A";
@@ -30661,7 +30661,7 @@ createNode polyTweakUV -n "polyTweakUV11";
 		 -0.00054370082 0.0015325972 -0.00055118592 0.00037749557 -0.156416 -0.0023734171
 		 -0.15642318 -0.0023769629 -0.15658318 -0.0020463276;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "7CFB92CF-42BB-F9B5-91C4-D2908607ABAE";
+	rename -uid "E4E85C06-4795-91CD-3068-A6A80720F515";
 select -ne :time1;
 	setAttr ".o" 40;
 	setAttr ".unw" 40;
@@ -30892,4 +30892,4 @@ connectAttr "groupId24.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId25.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId26.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId31.msg" ":initialShadingGroup.gn" -na;
-// End of Escena_Pasillo.ma
+// End of Escena_Pasillo_02.ma
