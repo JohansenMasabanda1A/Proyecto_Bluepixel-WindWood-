@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
-//Name: Casa_personaje_Principal_03.ma
-//Last modified: Mon, Mar 31, 2025 02:17:30 PM
+//Name: Casa_personaje_Principal_04.ma
+//Last modified: Mon, Mar 31, 2025 02:18:06 PM
 //Codeset: 1252
 requires maya "2025";
 requires "stereoCamera" "10.0";
@@ -14,7 +14,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202404240506-c155a58772";
 fileInfo "osv" "Windows 11 Education v2009 (Build: 22631)";
-fileInfo "UUID" "6FFEB6D3-4C74-A76D-1601-03A438C61CA7";
+fileInfo "UUID" "B15320A5-466D-A48A-4E04-CE82EDD18AF4";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "A502B77F-46EE-62C6-4C73-1B96F00CC382";
@@ -307118,7 +307118,7 @@ createNode polyCube -n "polyCube3";
 	setAttr ".d" 100;
 	setAttr ".cuv" 4;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "347E5434-46DF-A031-990C-BC8CBED7FF16";
+	rename -uid "2C942EF4-4B08-AC7F-4FB4-D3B7C5AF37CC";
 select -ne :time1;
 	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
@@ -308250,4 +308250,4 @@ connectAttr "groupId1877.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId1878.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId1880.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId1882.msg" ":initialShadingGroup.gn" -na;
-// End of Casa_personaje_Principal_03.ma
+// End of Casa_personaje_Principal_04.ma
