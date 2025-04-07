@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: Botella.ma
-//Last modified: Mon, Apr 07, 2025 12:59:24 PM
+//Last modified: Mon, Apr 07, 2025 01:00:28 PM
 //Codeset: 1252
 requires maya "2025";
 requires "mtoa" "5.4.2.1";
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202404240506-c155a58772";
 fileInfo "osv" "Windows 11 Education v2009 (Build: 22631)";
-fileInfo "UUID" "9E2421BC-4363-801E-971A-5287B41F5663";
+fileInfo "UUID" "780AC8C8-47A6-7311-CAA2-3DAE2E3D758E";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "E45EE0AC-47B2-8E23-9D43-87A5C47C5864";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28 21 28 ;
-	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-14 ;
+	setAttr ".t" -type "double3" 27.653736234135916 24.869424436861465 32.264167673085247 ;
+	setAttr ".r" -type "double3" -30.338352729602477 40.600000000000165 2.0944783839044272e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B849A5D4-42D3-BA62-7925-B7AC3333F861";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 44.82186966202994;
+	setAttr ".coi" 49.23610377725764;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -37,7 +37,7 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
+	setAttr ".ow" 25.263157894736842;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
@@ -53,7 +53,7 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
+	setAttr ".ow" 25.263157894736842;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -70,7 +70,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 30;
+	setAttr ".ow" 25.263157894736842;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
@@ -95,8 +95,6 @@ createNode renderLayerManager -n "renderLayerManager";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "16708E76-49CC-10D8-906C-698F5B951FF8";
 	setAttr ".g" yes;
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "6EE41450-4655-8287-27F9-B8A40C5D7F3E";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "1F7D7B61-4D87-B2ED-C764-95B0BF3B1589";
 	setAttr ".b" -type "string" (
@@ -144,6 +142,8 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "4DEF766E-4E09-BF0C-D337-96A7D6146621";
 	setAttr ".b" -type "string" "playbackOptions -min -50 -max 150 -ast -50 -aet 150 ";
 	setAttr ".st" 6;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "29F56DF7-49C7-7696-42A8-EDA4FDCF3188";
 select -ne :time1;
 	setAttr ".o" -50;
 	setAttr ".unw" -50;
