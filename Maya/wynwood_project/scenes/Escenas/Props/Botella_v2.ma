@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
-//Name: Botella.ma
-//Last modified: Thu, Apr 10, 2025 02:20:25 PM
+//Name: Botella_v2.ma
+//Last modified: Thu, Apr 10, 2025 02:20:39 PM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202404240506-c155a58772";
 fileInfo "osv" "Windows 11 Education v2009 (Build: 26100)";
-fileInfo "UUID" "F611126F-4B81-B4CA-D129-848442E38DD8";
+fileInfo "UUID" "067FAE83-4DA4-64B1-9B5D-0DBE1B0C445F";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "E45EE0AC-47B2-8E23-9D43-87A5C47C5864";
@@ -31089,7 +31089,7 @@ createNode polyTweakUV -n "polyTweakUV3";
 		 -0.17326415 -0.094343364 -0.17614132 -0.093441963 -0.1769684 -0.093154967 -0.17777717
 		 -0.092827201 -0.17857251 -0.092454791 -0.1793617 -0.092041969;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "70114910-493D-24E3-D05A-CBAE0E7CFE10";
+	rename -uid "82CBE544-481B-E0C3-FA50-27B268DF5249";
 select -ne :time1;
 	setAttr ".o" -50;
 	setAttr ".unw" -50;
@@ -31297,4 +31297,4 @@ connectAttr "polySurfaceShape6.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId7.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId8.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId9.msg" ":initialShadingGroup.gn" -na;
-// End of Botella.ma
+// End of Botella_v2.ma
